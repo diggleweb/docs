@@ -39,6 +39,7 @@ abrir as portas 8080 e 5555
 
 ## inicializar 
 
+
 Criar pasta dentro de uma pasta `airflow``
 > mkdir -p ./dags ./logs ./plugins
 
@@ -92,6 +93,11 @@ RestartSec=10
 [Install]
 #WantedBy=multi-user.target
 ```
+
+## chmod para tornar executable
+
+> chmod +x run.sh
+> ./run.sh
 
 run service
 > systemctl daemon-reload
